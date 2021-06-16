@@ -22,6 +22,11 @@ public class SceneManage : MonoBehaviour
             SceneManager.LoadScene("menu");
         }
     }
+    public void ChangeSceneTitle(){
+        if(SceneManager.GetActiveScene().name == "menu"){
+            SceneManager.LoadScene("title");
+        }
+    }
     public void Button_Quit(){
         if(SceneManager.GetActiveScene().name == "title"){
             Application.Quit();
